@@ -256,14 +256,26 @@ footer {
     height: 100px;
 }
 @media (max-width: 768px) {
+    /* HEADER */
     header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 1em;
     }
 
     nav ul {
         flex-direction: column;
         width: 100%;
+        align-items: center;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
     }
 
     nav li a {
@@ -271,29 +283,62 @@ footer {
         width: 100%;
     }
 
+    /* HERO SECTION */
     .hero {
         flex-direction: column;
         text-align: center;
+        padding: 2em 1em;
     }
 
-    .hero-content, .hero-image {
-        flex: unset;
-        width: 100%;
+    .hero-content h1 {
+        font-size: 2em;
     }
 
-    .feature-grid, 
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .hero-image {
+        margin-top: 1.5em;
+    }
+
+    /* FEATURE GRID */
+    .feature-grid,
     .about-page .team-grid,
     #resource-list {
         grid-template-columns: 1fr;
     }
 
-    .call-to-action {
+    .feature-item,
+    .resource-item,
+    .about-page .team-member {
         padding: 1em;
     }
 
+    /* BUTTON */
+    .button {
+        padding: 0.7em 1.2em;
+        font-size: 1em;
+    }
+
+    /* CALL TO ACTION */
+    .call-to-action {
+        padding: 1.5em 1em;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.6em;
+    }
+
+    .call-to-action p {
+        font-size: 1em;
+    }
+
+    /* IMAGES */
     .feature-item img,
-    .resource-logo {
-        width: 100%;
+    .resource-logo,
+    .about-page .aboutimage {
+        max-width: 100%;
         height: auto;
     }
 
