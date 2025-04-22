@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources | Cybersecurity Solutions</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.jpg" alt="Cybersecurity Solutions Logo" />
+            <h1>Digital Security Services</h1>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html" aria-current="page">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="resources-page">
+        <section class="resource-section">
+            <h2>Useful Cybersecurity Resources</h2>
+
+
+            <input type="text" id="resource-search" placeholder="Search resources..." aria-label="Search resources" />
+            <section class="password-checker">
+                <div class="container">
+                  <h2>Password Strength Checker</h2>
+                  <input type="password" id="password" placeholder="Enter password" />
+                  <div id="strength"></div>
+                </div>
+            </section>
+              
+            <div id="resource-list">
+                <div class="resource-item" data-tags="tools free cisa">
+                    <img src="image/header_logo_tagline_update.svg" alt="CISA Logo" class="resource-logo" />
+                    <a href="https://www.cisa.gov/resources-tools/resources/free-cybersecurity-services-and-tools" target="_blank" rel="noopener">
+                        CISA: Free Cybersecurity Services and Tools <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                    </a>
+                    <span class="tags">#tools #free #CISA</span>
+                </div>
+            
+                <div class="resource-item" data-tags="training sans security">
+                    <img src="image/sanslogo.png" alt="SANS Logo" class="resource-logo" />
+                    <a href="https://www.sans.org/security-resources/" target="_blank" rel="noopener">
+                        SANS Security Resources <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                    </a>
+                    <span class="tags">#training #SANS</span>
+                </div>
+            
+                <div class="resource-item" data-tags="education github open-source">
+                    <img src="image/githubimage.png"alt="GitHub Logo" class="resource-logo" />
+                    <a href="https://github.com/CSIRT-MU/edu-resources" target="_blank" rel="noopener">
+                        GitHub: Cybersecurity Educational Resources <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                    </a>
+                    <span class="tags">#education #open-source #GitHub</span>
+                </div>
+            
+                <div class="resource-item" data-tags="standards policy nist">
+                    <img src="image/shutterstock_2284126663.jpg" alt="NIST Logo" class="resource-logo" />
+                    <a href="https://www.nist.gov/cybersecurity" target="_blank" rel="noopener">
+                        NIST Cybersecurity Framework <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                    </a>
+                    <span class="tags">#standards #NIST</span>
+                </div>
+            </div>
+            
+            
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Digital Security Services. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+
+    <script>
+        const searchInput = document.getElementById('resource-search');
+        const resourceItems = document.querySelectorAll
+    </script>
